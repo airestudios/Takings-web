@@ -410,6 +410,50 @@
       font-size: 12px !important;
     }
 
+    .account-deletion {
+      padding-top: 0;
+    }
+
+    .account-deletion-card {
+      padding: 40px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .account-deletion-card h2 {
+      margin-bottom: 16px;
+      font-family: "Segoe UI Variable Display", "SF Pro Display", "Segoe UI Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-size: 29px;
+      font-weight: 650;
+      letter-spacing: -0.028em;
+      line-height: 1.18;
+    }
+
+    .account-deletion-card p,
+    .account-deletion-card li {
+      color: var(--slate);
+      font-size: 14px;
+      line-height: 1.65;
+      letter-spacing: -0.004em;
+    }
+
+    .account-deletion-card ol {
+      margin: 20px 0 0;
+      padding-left: 22px;
+    }
+
+    .account-deletion-card li + li {
+      margin-top: 10px;
+    }
+
+    .account-deletion-card a {
+      color: var(--deep-green);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     .contact {
       padding-top: 72px;
       border-top: 1px solid var(--line);
@@ -584,6 +628,10 @@
         gap: 54px;
       }
 
+      .account-deletion-card {
+        padding: 28px 24px;
+      }
+
       .contact-inner,
       .footer-main,
       .footer-meta {
@@ -752,6 +800,24 @@
       </div>
     </section>
 
+    <section class="account-deletion" id="account-deletion" aria-labelledby="account-deletion-title">
+      <div class="container">
+        <div class="account-deletion-card">
+          <p class="eyebrow">Account &amp; data deletion</p>
+          <h2 id="account-deletion-title">Delete your Takings data.</h2>
+          <p>Takings is designed as a local-first application. Data stored only on your device can be removed by deleting the relevant records in the app, clearing the app's storage in your device settings, or uninstalling Takings.</p>
+          <p>If you have connected a supported marketplace such as eBay, you can disconnect that marketplace from Takings. Where Takings holds information outside your device for authentication, integration or support purposes, you can request deletion by contacting us.</p>
+          <ol>
+            <li>Email <a href="mailto:airedesign.info@gmail.com?subject=Takings%20Account%20Deletion%20Request">airedesign.info@gmail.com</a> with the subject <strong>Takings Account Deletion Request</strong>.</li>
+            <li>Use the email address associated with your request and provide only the information needed for us to identify the relevant Takings or marketplace connection. Do not send marketplace passwords or authentication codes.</li>
+            <li>We will verify the request where necessary, remove information Takings is required to delete, and confirm when the request has been completed.</li>
+          </ol>
+          <p>Some records may need to be retained where required by law, security obligations, fraud prevention requirements or marketplace API rules. Marketplace account deletion or closure requests received through an official marketplace API will be handled in accordance with that marketplace's requirements.</p>
+          <p class="updated">Last updated: September 2026</p>
+        </div>
+      </div>
+    </section>
+
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact-inner">
         <div>
@@ -774,6 +840,7 @@
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="#privacy">Privacy</a>
           <a href="#terms">Terms</a>
+          <a href="#account-deletion">Account deletion</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
